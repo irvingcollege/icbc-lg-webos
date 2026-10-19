@@ -1,0 +1,20 @@
+
+> icbc-lg-webos@1.0.0 package
+> node scripts/package.js
+
+profile and config data is changed to tv
+Create church.irvingcollege.icbc_1.0.0_all.ipk to /workspace/work/icbc-lg-webos/artifacts
+Success
+< Package Information >
+Package: church.irvingcollege.icbc
+Version: 1.0.0
+Architecture: all
+Installed-Size: 569944
+app: church.irvingcollege.icbc
+
+< Application Information >
+id: church.irvingcollege.icbc
+version: 1.0.0
+type: web
+main: index.html
+Built with official @webos-tools/cli 3.2.6: /workspace/work/icbc-lg-webos/artifacts/church.irvingcollege.icbc_1.0.0_all.ipk

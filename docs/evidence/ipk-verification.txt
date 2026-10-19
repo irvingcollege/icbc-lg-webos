@@ -1,0 +1,5 @@
+
+> icbc-lg-webos@1.0.0 verify:ipk
+> python3 scripts/verify-ipk.py
+
+IPK verified: ar/control metadata and 11 application files match dist/ byte-for-byte
