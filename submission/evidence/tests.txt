@@ -1,0 +1,42 @@
+
+> icbc-lg-webos@1.0.1 test
+> node --test tests/*.test.js
+
+✔ TV navigation, catalog rendering, player and return focus (903.275798ms)
+✔ empty, failed and malformed catalogs give recoverable messages (390.738356ms)
+✔ Back opens exit confirmation and Stay returns home (149.334627ms)
+✔ archived MP4 plays, pauses and returns using remote controls (319.31305ms)
+✔ live stream failure is recoverable and live seeking is disabled (212.188161ms)
+✔ bundled browser HLS fallback plays a real local fixture without remote scripts (225.798919ms)
+✔ archive keeps three TV columns and playback fills the screen (214.99669ms)
+✔ LG Magic Remote hover, OK, Back 461, dialog navigation and exit fallback (219.960482ms)
+✔ LG media key codes play/pause/seek/stop and visibility pauses playback (312.772308ms)
+✔ playback error retries successfully and Back restores sermon focus (318.865895ms)
+✔ failed catalog refresh retains existing playable sermons (173.715716ms)
+✔ exit dialog traps Tab and blocks pointer activation behind it (110.835816ms)
+✔ Privacy and Support is readable by remote and Back restores home focus (182.198532ms)
+✔ loads arrays and documented wrapper formats (1.153747ms)
+✔ rejects unsafe media and permits HLS and signed MP4 URLs (0.298689ms)
+✔ filters bad records and preserves an empty catalog (0.745433ms)
+✔ LG manifest and production allowlist are valid and exclude Samsung packaging (27.408579ms)
+✔ existing livestream and catalog endpoints are preserved (0.260322ms)
+✔ native LG HLS uses HTML video and no script fallback (2.715199ms)
+✔ older video engines with a void play return are supported (0.888157ms)
+✔ Pause while HLS manifest loads survives asynchronous preparation (2.55628ms)
+✔ stale play rejection cannot overwrite Retry or an intentional pause (0.715467ms)
+✔ play rejection and native media errors recover with Retry (0.966987ms)
+✔ startup timeout and mid-playback stall have bounded recovery (3.137755ms)
+✔ closed sessions ignore saved handlers, late HLS loads and timeouts (1.306508ms)
+✔ HLS fatal errors and missing fallback produce recoverable errors (1.232075ms)
+✔ infinite live duration is not seeked and ended/time events are forwarded (1.273508ms)
+✔ LG exit closes media and window; browser exposes exitUnavailable (1.495983ms)
+✔ native playing callback respects Pause requested during startup (0.924603ms)
+✔ queued HTML pause event cannot cancel a newer resume request (0.9431ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4412.174917

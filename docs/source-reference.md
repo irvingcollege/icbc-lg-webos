@@ -18,3 +18,7 @@ Read the source README, `js/platform.js`, application UI/navigation, catalog par
 | Tooling/tests | Reused catalog and browser tests/fixtures; replaced Samsung adapter/distribution tests with webOS tests; new official CLI build/verification scripts and CI |
 
 Samsung SDK configuration, signing scripts, Tizen manifests, certificates, seller assets and Samsung-only workflows are intentionally not part of this separate project. No production server configuration was edited.
+
+## Version 1.0.1 submission preparation
+
+Added a local Privacy & Support screen and a branded 1920x1080 splash; shortened only the launcher title to fit LG's published resource guidance. In-app church design, catalog logic, media URLs and original artwork remain. The church confirmed the public contact, US territory, sermon rights/music exclusion, no visitor/IP log retention, and Sunday 10:30 AM Central live window. These additions are in the separate LG project only.

@@ -24,7 +24,7 @@ Use a development computer and LG webOS TV on the same trusted local network. No
    npm test
    npm run package
    npm run verify:ipk
-   ares-install --device icbc-lg artifacts/church.irvingcollege.icbc_1.0.0_all.ipk
+   ares-install --device icbc-lg artifacts/church.irvingcollege.icbc_1.0.1_all.ipk
    ares-launch --device icbc-lg church.irvingcollege.icbc
    ares-inspect --device icbc-lg --app church.irvingcollege.icbc
    ```
@@ -43,7 +43,7 @@ The generated IPK is an actual CLI package for development installation. Buildin
 
 ## LG simulator
 
-Install a current LG webOS TV Simulator from LG's developer website on a supported desktop, then use the simulator's documented launch flow or `ares-launch --simulator <VERSION> <APP_DIRECTORY>` (and `--simulator-path <PATH>` when needed). Point it at this project's `dist/` directory. No simulator was installed or run in this environment. Simulator video/remote behavior is supplementary evidence and cannot replace hardware tests.
+Install a current LG webOS TV Simulator from LG's developer website on a supported desktop, then use the simulator's documented launch flow or `ares-launch --simulator <VERSION> <APP_DIRECTORY>` (and `--simulator-path <PATH>` when needed). Point it at this project's `dist/` directory. No simulator was installed or run in this cloud environment. The church representative subsequently reported successful visual launch of version 1.0.0 in the Mac webOS26 simulator; version 1.0.1 needs to be rechecked. Simulator video/remote behavior is supplementary evidence and cannot replace hardware tests.
 
 ## Submit to LG Content Store
 

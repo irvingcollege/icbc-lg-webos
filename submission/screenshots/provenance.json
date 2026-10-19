@@ -1,0 +1,39 @@
+{
+  "capturedAt": "2026-10-19T20:39:27.384Z",
+  "appVersion": "1.0.1",
+  "physicalTV": false,
+  "simulator": false,
+  "catalogSource": "Read-only live catalog GET; bytes snapshotted locally and supplied to Chromium through interception. This does not test production CORS.",
+  "productionVideoPlayback": false,
+  "syntheticVideoScreenshotsIncluded": false,
+  "captures": [
+    {
+      "file": "01-home.jpg",
+      "width": 1920,
+      "height": 1080,
+      "source": "Chromium browser",
+      "description": "Version 1.0.1 application home; real catalog snapshot supplied through request interception."
+    },
+    {
+      "file": "02-sermon-library.jpg",
+      "width": 1920,
+      "height": 1080,
+      "source": "Chromium browser",
+      "description": "Archive navigation with the two real production catalog records; playback not exercised."
+    },
+    {
+      "file": "03-privacy-support.jpg",
+      "width": 1920,
+      "height": 1080,
+      "source": "Chromium browser",
+      "description": "In-app privacy and support screen using church-confirmed contact and no-log statements."
+    },
+    {
+      "file": "04-exit-confirmation.jpg",
+      "width": 1920,
+      "height": 1080,
+      "source": "Chromium browser",
+      "description": "Home-level exit confirmation; actual TV shell behavior remains untested."
+    }
+  ]
+}

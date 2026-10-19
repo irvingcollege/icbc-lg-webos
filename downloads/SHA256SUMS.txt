@@ -1,2 +1,5 @@
 1bb094fa538d2c9cf6a6f37ee173fc721a53ce565566897df6929364d562df18  church.irvingcollege.icbc_1.0.0_all.ipk
+1d82862f6c548b60e0401ac116dc8e9adf43c48dbb73e242980a4f936cd9845b  church.irvingcollege.icbc_1.0.1_all.ipk
 fd982882ef495948bfa2ebf3e79bd77d4b6edc2f45ca78ffe816cec3982cfd91  icbc-lg-webos-source-1.0.0.zip
+0138a007954ccf193d25abfb6bb5f2a2001ef1df933ec04ff61364e09f5b5311  icbc-lg-webos-source-1.0.1.zip
+94d887018630925d209cbd49996edfb1c789e3cab8f8c8b2997582105186911a  icbc-lg-webos-submission-1.0.1.zip

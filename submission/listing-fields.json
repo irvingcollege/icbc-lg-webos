@@ -1,0 +1,25 @@
+{
+  "status": "prepared-not-submitted",
+  "app_id": "church.irvingcollege.icbc",
+  "version": "1.0.1",
+  "listing_name": "Irving College Baptist Church",
+  "launcher_title": "Irving College BC",
+  "language": "en-US",
+  "countries": [
+    "US"
+  ],
+  "price_proposal": "Free",
+  "support_email": "icbcnextsteps@gmail.com",
+  "support_url": "https://github.com/irvingcollege/icbc-lg-webos/blob/main/docs/support.md",
+  "privacy_url": "https://github.com/irvingcollege/icbc-lg-webos/blob/main/docs/privacy-policy.md",
+  "category": "Select closest available Education/faith category; confirm in portal",
+  "rating": "Pending actual content questionnaire",
+  "physical_tv_verified": false,
+  "simulator_report": "User reports successful appearance on Mac webOS26 simulator, earlier 1.0.0 build; current 1.0.1 needs recheck",
+  "content_rights": "Church confirms sermon distribution rights; music excluded",
+  "visitor_ip_logs_retained": false,
+  "catalog_cors": "No Access-Control-Allow-Origin in read-only Oct 19 check; unresolved",
+  "target_model_groups": "Pending validation; do not claim all models",
+  "broadcast_windows": "Sunday worship only, starts 10:30 AM U.S. Central Time (America/Chicago); ending time varies",
+  "ipk_sha256": "1d82862f6c548b60e0401ac116dc8e9adf43c48dbb73e242980a4f936cd9845b"
+}

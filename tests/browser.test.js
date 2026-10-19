@@ -282,3 +282,17 @@ test("exit dialog traps Tab and blocks pointer activation behind it", async () =
   await remote(461);
   assert.equal(await page.locator("#exit-dialog").isVisible(), false);
 });
+
+test("Privacy and Support is readable by remote and Back restores home focus", async () => {
+  await home([]);
+  await page.locator("#privacy-open").click();
+  assert.equal(await page.locator("#privacy-view").isVisible(), true);
+  assert.match(await page.locator("#privacy-view").textContent(), /icbcnextsteps@gmail\.com/);
+  assert.match(await page.locator("#privacy-view").textContent(), /does not retain visitor or IP access logs/);
+  assert.equal(await page.locator("#privacy-close").evaluate(el => el === document.activeElement), true);
+  await remote(40);
+  assert.equal(await page.locator("#privacy-close-bottom").evaluate(el => el === document.activeElement), true);
+  await remote(461);
+  assert.equal(await page.locator("#privacy-view").isVisible(), false);
+  assert.equal(await page.locator("#privacy-open").evaluate(el => el === document.activeElement), true);
+});

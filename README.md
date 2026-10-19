@@ -6,6 +6,10 @@ The original gold/teal design, church artwork, service times, three-column sermo
 
 **Status:** a real `.ipk` was built with LG's official `@webos-tools/cli` 3.2.6, TV profile. Automated browser and adapter tests do not establish LG television compatibility. No LG TV or simulator was connected. The catalog response currently lacks a CORS header; see [verification and release gates](docs/verification.md) before release.
 
+## Submission preparation
+
+Start with the [version 1.0.1 submission pack](submission/README.md): listing copy, reviewer UX scenario, store artwork, screenshots, church-confirmed privacy/support details and actual test evidence. Version 1.0.1 adds a local Privacy & Support screen and branded splash. **30 automated tests pass**; physical LG TV testing and catalog CORS remain unresolved. The [1.0.0 verification report](docs/verification.md) is historical.
+
 ## Download
 
 Get the [installable IPK and source ZIP](downloads/README.md), or visit [GitHub Releases](https://github.com/irvingcollege/icbc-lg-webos/releases). On a GitHub file page, use **Download raw file** to save the file to your computer. These are development builds; physical LG TV testing remains outstanding.
@@ -31,7 +35,7 @@ Tests default to `/usr/bin/chromium`. Set `CHROMIUM_PATH` to your browser execut
 `npm run package` stages only `index.html`, `appinfo.json`, `css/`, `js/`, and `assets/` in `dist/`, then invokes the pinned official LG `ares-config --profile tv` and `ares-package --no-minify`. Disabling the CLI's additional JavaScript minification keeps deployed code identical to tested source and preserves the already bundled HLS.js file. It fails on CLI errors and inspects the result using `ares-package --info`. Output:
 
 ```text
-artifacts/church.irvingcollege.icbc_1.0.0_all.ipk
+artifacts/church.irvingcollege.icbc_1.0.1_all.ipk
 ```
 
 `npm run verify:ipk` validates the ar/IPK container, control metadata, safe archive paths and every deployed application file against `dist/`. Build tooling, npm dependencies, tests and credentials are excluded. CLI packaging state is placed under ignored `work/cli-state/` using the CLI's supported `APPDATA` setting.

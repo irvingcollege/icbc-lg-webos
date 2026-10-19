@@ -9,6 +9,13 @@ function validate(base = root) {
   assert.deepEqual(info.requiredACG, []);
   assert.equal(info.main, "index.html");
   assert.equal(info.resolution, "1920x1080");
+  assert(info.title.length <= 20, "Launcher title exceeds LG App Resources guidance");
+  assert(info.appDescription.length <= 60);
+  assert.equal(info.splashBackground, "assets/lg-splash.png");
+  const splash = fs.readFileSync(path.join(base, info.splashBackground));
+  assert.equal(splash.subarray(0, 8).toString("hex"), "89504e470d0a1a0a");
+  assert.equal(splash.readUInt32BE(16), 1920);
+  assert.equal(splash.readUInt32BE(20), 1080);
   assert.equal(info.disableBackHistoryAPI, true);
   for (const [field, size] of [["icon", 80], ["largeIcon", 130]]) {
     assert(!info[field].includes("..") && !path.isAbsolute(info[field]));

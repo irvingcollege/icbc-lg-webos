@@ -1,0 +1,25 @@
+ID,Area,Check,Evidence / scope,Status,Next action
+PKG-01,Packaging,"App ID/version, production allowlist and official CLI package",Version 1.0.1; official @webos-tools/cli 3.2.6; metadata and build logs,PASS - automated,Upload the exact verified IPK after resolving open gates
+PKG-02,Packaging,"Packaged icons, splash and launcher description",80/130 PNG icons; 1920x1080 splash; title <=20 and description <=60 characters checked,PASS - automated,Recheck portal-specific marketing fields
+PKG-03,Packaging,Deployed source matches tested build,IPK ar/control metadata and all 12 app files match dist/ byte-for-byte,PASS - automated,Verify downloaded SHA-256 before final upload
+UX-01,Navigation,"D-pad, OK, focus selection and return focus",Chromium tests; native remote not available,PASS - browser scope,Physical remote test remains open
+UX-02,Pointer,Magic Remote pointer and stationary-cursor focus handling,"Chromium mouse movement and click tests, not real Magic Remote hardware",PASS - browser scope,"Test pointer, wheel and D-pad switching on LG TV"
+UX-03,Back,Home-level Back for selected model groups,Custom exit confirmation; general LG guide vs webOS23-25 self-checklist wording differs,OPEN,Resolve target-model interpretation in Seller Lounge and test on the selected targets
+UX-04,Privacy,Local policy screen and contact readable with remote,"New browser test passes, including arrows, Back and focus restoration",PASS - browser scope,Review same screen in simulator and actual TV
+UX-05,Appearance,Mac webOS26 simulator visual launch,Church representative reports 1.0.0 looks great; no screenshot or playback result supplied,USER REPORTED,Recheck 1.0.1 after its splash/privacy update; record Mac/simulator version
+CAT-01,Catalog,Normalization and unsafe URL restrictions,Three parser tests plus browser loading/Refresh/error cases,PASS - automated,Confirm installed-app CORS and real catalog accessibility
+CAT-02,Network,Production catalog CORS,Oct 19 read-only GET with Origin:null lacks Access-Control-Allow-Origin,OPEN,Server owner to validate/configure CORS if required; no production edits authorized/performed
+VID-01,Playback,"Synthetic MP4 and HLS playback, pause and Retry",Actual browser fixture playback and adapter tests; not production sermons,PASS - browser scope,Test actual sermons and native HLS on hardware
+VID-02,Playback,Actual Sunday live worship playback,Only live window confirmed: Sunday 10:30 AM U.S. Central Time,OPEN,"Observe real broadcast on target LG TV, including audio and full session"
+VID-03,Playback,Real archive seek/end/recovery,Native media behavior not yet exercised on LG TV,OPEN,"Test MP4 ranges, seek, end, replay and failure/retry on hardware"
+LIFE-01,Lifecycle,"Visibility pause, cleanup, startup/stall recovery",Automated browser/adapter tests pass,PASS - automated,Validate real shell suspend/resume/standby and no background audio
+TV-01,Hardware,"TV install, remote, native decoder, exit and lifecycle",No physical LG TV available; no hardware test results,OPEN,Obtain physical testing for intended model groups or ask LG about accepted validation options
+CONTENT-01,Rights,Distribution rights for sermon content,Church representative confirms rights; music is excluded for rights reasons,CHURCH CONFIRMED,Owner reviews every accessible asset and retains any required licenses/permissions
+CONTENT-02,Ratings,Actual content and age-rating questionnaire,No complete content review or portal questionnaire has been performed,OPEN,Owner reviews catalog and answers honestly; do not invent a rating
+PRIV-01,Privacy,"Public and in-app policy, support contact",icbcnextsteps@gmail.com; local screen and public policy prepared,PREPARED,Owner reviews text and confirms portal accepts the URL
+PRIV-02,Privacy,"No retained visitor/IP logs, advertising or analytics",No-log statement confirmed by church; no analytics/ads/account features in app,CHURCH CONFIRMED,Keep actual hosting/data practices consistent with policy
+SEC-01,Security,Credentials and unnecessary permissions,Source reviewed; no authentication secrets required; requiredACG empty; HTTPS media host restricted,SOURCE REVIEW,No independent full security audit or platform permission certification claimed
+STORE-01,Distribution,Initial territory and language,United States only confirmed; English listing prepared,CHURCH CONFIRMED,Choose United States in portal
+STORE-02,Store assets,Separate 400 icon and screen evidence,Original church cross; 1920x1080 browser JPG captures with provenance,PREPARED,Confirm current portal sizes/formats and any required simulator/device screenshot source
+STORE-03,Official forms,LG official self-checklist and UX template,Supplemental workbook/docs supplied; official binary template could not be downloaded in cloud,OPEN,Download current LG QA form; transfer only actual results; signed-in UX template may require transfer
+STORE-04,Account/submission,"Authorized seller details, agreements and final upload",No Seller Lounge account accessed and no form submitted,OPEN,Church completes account declarations and explicitly submits when ready

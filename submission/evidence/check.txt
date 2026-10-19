@@ -1,0 +1,5 @@
+
+> icbc-lg-webos@1.0.1 check
+> node scripts/validate.js
+
+Validated webOS metadata, icons, ES5 application scripts and bundled HLS: church.irvingcollege.icbc

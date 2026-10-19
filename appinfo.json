@@ -1,15 +1,18 @@
 {
   "id": "church.irvingcollege.icbc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "vendor": "Irving College Baptist Church",
   "type": "web",
   "main": "index.html",
-  "title": "Irving College Baptist Church",
+  "title": "Irving College BC",
   "icon": "assets/lg-icon.png",
   "largeIcon": "assets/lg-large-icon.png",
   "iconColor": "#0c1920",
   "bgColor": "#0c1920",
   "resolution": "1920x1080",
   "disableBackHistoryAPI": true,
-  "requiredACG": []
+  "requiredACG": [],
+  "appDescription": "A Place of Hope for Warren County",
+  "splashBackground": "assets/lg-splash.png",
+  "splashColor": "#0c1920"
 }

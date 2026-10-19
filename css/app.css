@@ -267,3 +267,9 @@ video { object-fit: contain; }
   z-index: 9;
   background: rgba(0, 0, 0, 0.733);
 }
+
+footer { display: flex; align-items: center; justify-content: space-between; }
+#privacy-open { font-size: 18px; padding: 12px 20px; }
+#privacy-view { position: fixed; top: 0; right: 0; bottom: 0; left: 0; overflow-y: auto; background: #0c1920; padding: 54px 86px; }
+#privacy-view p { max-width: 1500px; font-size: 26px; line-height: 1.55; }
+#privacy-view button { margin: 16px 0; }

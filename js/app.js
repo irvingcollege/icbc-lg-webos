@@ -6,7 +6,9 @@
     platform = window.ICBCPlatform,
     playing = null,
     returnFocus = null,
-    loading = false;
+    loading = false,
+    privacyOpen = false,
+    privacyFocus = null;
   function hideExit() {
     $("exit-backdrop").classList.add("hidden");
     $("exit-dialog").open = false;
@@ -72,7 +74,15 @@
     if (returnFocus && document.contains(returnFocus)) returnFocus.focus();
     else $("live").focus();
   }
+  function closePrivacy() {
+    privacyOpen = false;
+    $("privacy-view").classList.add("hidden");
+    $("home").classList.remove("hidden");
+    if (privacyFocus && document.contains(privacyFocus)) privacyFocus.focus();
+    else $("live").focus();
+  }
   function back() {
+    if (privacyOpen) { closePrivacy(); return; }
     if (playing) {
       close();
       return;
@@ -141,7 +151,7 @@
     xhr.send();
   }
   function candidates() {
-    var scope = $("exit-dialog").open
+    var scope = privacyOpen ? $("privacy-view") : $("exit-dialog").open
       ? $("exit-dialog")
       : playing
         ? $("player")
@@ -183,6 +193,15 @@
       best.scrollIntoView({ block: "nearest" });
     }
   }
+  $("privacy-open").onclick = function () {
+    privacyFocus = document.activeElement;
+    privacyOpen = true;
+    $("home").classList.add("hidden");
+    $("privacy-view").classList.remove("hidden");
+    $("privacy-view").scrollTop = 0;
+    $("privacy-close").focus();
+  };
+  $("privacy-close").onclick = $("privacy-close-bottom").onclick = closePrivacy;
   $("live").onclick = function () {
     open({
       title: "ICBC • Watch Live",

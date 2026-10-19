@@ -1,4 +1,6 @@
-# Verification and remaining release gates
+# Version 1.0.0 verification and remaining release gates
+
+Historical baseline. For current version 1.0.1 results and submission preparation, see [submission/README.md](../submission/README.md). The user subsequently reported a successful visual launch of 1.0.0 in the Mac webOS26 simulator; that report does not verify production playback or physical hardware.
 
 **Date:** October 19, 2026. **Physical LG TV compatibility has not been verified.** No physical TV, LG simulator, Seller Lounge account or store submission was used.
 
