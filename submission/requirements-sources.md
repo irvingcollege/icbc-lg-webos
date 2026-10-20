@@ -12,3 +12,7 @@ Reviewed October 19, 2026 using LG's public developer documentation. Seller Loun
 - [Seller Lounge](https://seller.lgappstv.com/): church account controls seller details, category options, ratings, target groups, portal assets/templates and final submission.
 
 The web research tool could read the public pages but could not materialize LG's binary QA template ZIP. The source workspace's HTTP policy blocks direct access to LG's website. Consequently the supplied self-check workbook is a supplemental evidence worksheet, not a downloaded/filled official LG form. Download LG's current form from the link above or Seller Lounge, transfer only the verified results, and leave unresolved checks unresolved. This limitation does not prevent preparing the rest of the materials.
+
+## October 20 update
+
+The church supplied LG's UX Scenario v4.4 PowerPoint template. The completed template is in lg-template/ with numbered app screenshots and N/A login/payment/advertising sections. Life / Religion is the church-selected category. The separate official self-checklist remains required; it has not been supplied or completed here.

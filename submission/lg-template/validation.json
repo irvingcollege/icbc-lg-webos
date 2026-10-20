@@ -1,0 +1,12 @@
+{
+  "applicationVersion": "1.0.1",
+  "templateVersion": "4.4",
+  "pages": 17,
+  "legacyPptSignatureVerified": true,
+  "allSlideTextFoundAfterLegacyRoundtrip": true,
+  "screenshots": "Chromium, with numbered controls; controlled media failure explicitly labeled",
+  "category": "Life / Religion",
+  "physicalTVVerified": false,
+  "applicationCodeChanged": false,
+  "servicePlatformSdk": "Exact portal SDK/launch-platform choice not supplied; document states this explicitly"
+}

@@ -2,6 +2,10 @@
 
 **Prepared, not submitted.** This folder contains listing copy, review guidance, privacy/support information, artwork and honest test evidence. It does not claim a completed LG certification or a passed physical-TV checklist.
 
+## Completed LG UX template
+
+The church supplied LG's official UX Scenario v4.4 template on October 20. Use the completed [PowerPoint/PDF files](lg-template/README.md) for the UX Scenario field instead of the earlier generic reviewer document. This does not replace LG's separate self-checklist.
+
 ## Start here
 
 1. Read [listing copy](listing.md) and [reviewer instructions](reviewer-instructions.md).

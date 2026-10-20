@@ -1,0 +1,25 @@
+name: Publish LG UX scenario documents
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['submission/lg-template/**', '.github/workflows/ux-documents.yml']
+permissions:
+  contents: write
+jobs:
+  upload-documents:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Attach completed LG UX template to development release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for file in submission/lg-template/*.ppt submission/lg-template/*.pptx submission/lg-template/*.pdf; do
+            name="$(basename "$file")"
+            if gh release view v1.0.1 --json assets --jq '.assets[].name' | grep -Fxq "$name"; then
+              echo "Already published; leaving $name unchanged."
+            else
+              gh release upload v1.0.1 "$file"
+            fi
+          done

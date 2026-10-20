@@ -29,7 +29,7 @@ Visit www.irvingcollege.church or contact icbcnextsteps@gmail.com for support.
 - Distribution: United States only (confirmed by the church).
 - Listing language: English (United States).
 - Price: Free; app has no payment or subscription flow. Confirm Free in the seller portal.
-- Category: use Education or the closest available faith/church-programming category in the portal; this is a suggestion, not a claimed current portal category.
+- Category: Life / Religion (selected by the church in Seller Lounge).
 - Keywords if supported: Irving College, Baptist Church, ICBC, sermons, worship, Warren County, Tennessee.
 - Support email: icbcnextsteps@gmail.com.
 - Support URL: https://github.com/irvingcollege/icbc-lg-webos/blob/main/docs/support.md

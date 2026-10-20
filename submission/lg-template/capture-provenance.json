@@ -1,0 +1,191 @@
+{
+  "capturedAt": "2026-10-20T15:32:40.977Z",
+  "physicalTV": false,
+  "simulator": false,
+  "productionMediaPlayed": false,
+  "captured": [
+    {
+      "name": "home",
+      "buttons": [
+        {
+          "selector": "#live",
+          "x": 86,
+          "y": 503.21875,
+          "width": 256.40625,
+          "height": 73
+        },
+        {
+          "selector": "#browse",
+          "x": 366.40625,
+          "y": 503.21875,
+          "width": 263.96875,
+          "height": 73
+        },
+        {
+          "selector": "#refresh",
+          "x": 1702.953125,
+          "y": 715.265625,
+          "width": 131.046875,
+          "height": 56
+        },
+        {
+          "selector": "#privacy-open",
+          "x": 1643.9375,
+          "y": 1022.3125,
+          "width": 190.0625,
+          "height": 51
+        }
+      ],
+      "note": "Current app with real catalog snapshot supplied through request interception; no production CORS test."
+    },
+    {
+      "name": "library",
+      "buttons": [
+        {
+          "selector": ".sermon >> nth=0",
+          "x": 86,
+          "y": 767.3125,
+          "width": 565.328125,
+          "height": 168
+        },
+        {
+          "selector": ".sermon >> nth=1",
+          "x": 677.328125,
+          "y": 767.3125,
+          "width": 565.328125,
+          "height": 168
+        },
+        {
+          "selector": "#refresh",
+          "x": 1702.953125,
+          "y": 668.265625,
+          "width": 131.046875,
+          "height": 56
+        }
+      ],
+      "note": "Archive navigation, using real production catalog snapshot."
+    },
+    {
+      "name": "archive-player",
+      "buttons": [
+        {
+          "selector": "#toggle",
+          "x": 70,
+          "y": 945,
+          "width": 139.734375,
+          "height": 73
+        },
+        {
+          "selector": "#rewind",
+          "x": 231.734375,
+          "y": 945,
+          "width": 214.171875,
+          "height": 73
+        },
+        {
+          "selector": "#forward",
+          "x": 467.90625,
+          "y": 945,
+          "width": 214.171875,
+          "height": 73
+        },
+        {
+          "selector": "#retry",
+          "x": 704.078125,
+          "y": 945,
+          "width": 128.125,
+          "height": 73
+        },
+        {
+          "selector": "#close",
+          "x": 854.203125,
+          "y": 945,
+          "width": 229.296875,
+          "height": 73
+        }
+      ],
+      "note": "Controlled media request failure; actual recovery UI, not successful production playback."
+    },
+    {
+      "name": "live-player",
+      "buttons": [
+        {
+          "selector": "#toggle",
+          "x": 70,
+          "y": 902,
+          "width": 139.734375,
+          "height": 73
+        },
+        {
+          "selector": "#rewind",
+          "x": 231.734375,
+          "y": 902,
+          "width": 214.171875,
+          "height": 73
+        },
+        {
+          "selector": "#forward",
+          "x": 467.90625,
+          "y": 902,
+          "width": 214.171875,
+          "height": 73
+        },
+        {
+          "selector": "#retry",
+          "x": 704.078125,
+          "y": 902,
+          "width": 128.125,
+          "height": 73
+        },
+        {
+          "selector": "#close",
+          "x": 854.203125,
+          "y": 902,
+          "width": 229.296875,
+          "height": 73
+        }
+      ],
+      "note": "Controlled live request failure; seek buttons disabled; not a production availability test."
+    },
+    {
+      "name": "privacy",
+      "buttons": [
+        {
+          "selector": "#privacy-close",
+          "x": 86,
+          "y": 70,
+          "width": 229.296875,
+          "height": 73
+        },
+        {
+          "selector": "#privacy-close-bottom",
+          "x": 86,
+          "y": 930.65625,
+          "width": 229.296875,
+          "height": 73
+        }
+      ],
+      "note": "Local privacy/support text confirmed by church representative."
+    },
+    {
+      "name": "exit",
+      "buttons": [
+        {
+          "selector": "#stay",
+          "x": 785.140625,
+          "y": 577.046875,
+          "width": 118.03125,
+          "height": 73
+        },
+        {
+          "selector": "#exit",
+          "x": 927.171875,
+          "y": 577.046875,
+          "width": 161.40625,
+          "height": 73
+        }
+      ],
+      "note": "Custom home-level exit dialog; physical shell behavior not tested."
+    }
+  ]
+}
